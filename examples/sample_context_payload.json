@@ -1,0 +1,24 @@
+{
+  "dashboard_state": {
+    "asset": "MASI index",
+    "forecast_horizon_days": 1,
+    "target_date": "YYYY-MM-DD",
+    "expected_return": 0.0032,
+    "var_5": -0.0145,
+    "expected_shortfall_5": -0.0198,
+    "volatility_regime": "medium"
+  },
+  "backtest_summary": {
+    "kupiec_p_value": 0.909,
+    "christoffersen_p_value": 0.7728,
+    "expected_violation_rate": 0.05,
+    "observed_violations": 40
+  },
+  "retrieved_passages": [
+    {
+      "source": "glossary_risk_terms.md",
+      "section": "Value at Risk",
+      "text": "VaR is a threshold loss level for a selected confidence level and horizon."
+    }
+  ]
+}

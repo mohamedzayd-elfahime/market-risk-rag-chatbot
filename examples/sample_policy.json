@@ -1,0 +1,16 @@
+{
+  "allow_llm": true,
+  "intent": "backtest_query",
+  "must_use_context": true,
+  "forbidden": [
+    "Do not invent numbers that are not present in the context.",
+    "Do not provide buy, sell, short, or allocation advice.",
+    "Do not call expected violation rate a p-value.",
+    "Do not treat HMM volatility regimes as market direction forecasts."
+  ],
+  "required": [
+    "Explain Kupiec and Christoffersen p-values as statistical diagnostics.",
+    "Explain expected violation rate as the theoretical expected VaR violation frequency.",
+    "Mention that historical validation does not guarantee future performance."
+  ]
+}
