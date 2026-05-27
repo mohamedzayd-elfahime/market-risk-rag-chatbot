@@ -1,8 +1,8 @@
 # Market Risk RAG Chatbot
 
-Architecture reference for a controlled local RAG chatbot designed for market risk dashboards.
+Architecture reference and reference implementation for a controlled local RAG chatbot designed for market risk dashboards.
 
-This repository focuses on the AI assistant layer: intent routing, retrieval-augmented generation, dashboard-state grounding, prompt construction, response policies, and post-generation guardrails. The design comes from a larger end-to-end risk platform where the chatbot explains forecasts, VaR, Expected Shortfall, volatility regimes, backtests, and model outputs without giving investment advice.
+This repository focuses on the AI assistant layer: intent routing, retrieval-augmented generation, dashboard-state grounding, prompt construction, response policies, and post-generation guardrails. It also includes a reference implementation extracted from a larger end-to-end risk platform where the chatbot explains forecasts, VaR, Expected Shortfall, volatility regimes, backtests, and model outputs without giving investment advice.
 
 ## Why This Project Matters
 
@@ -52,11 +52,31 @@ docs/
   GUARDRAILS.md         Safety and answer validation layer
   DIAGRAMS.md           Mermaid architecture diagrams
 
+src/
+  backend/              Reference implementation of the chatbot subsystem
+
 examples/
   sample_context_payload.json
   sample_policy.json
   sample_prompt.txt
 ```
+
+## Reference Implementation
+
+The `src/backend/` folder contains the implementation behind the architecture:
+
+- FastAPI chat route;
+- chatbot turn orchestration;
+- embedding-based intent router;
+- Chroma/vector RAG retriever;
+- prompt builder;
+- response policy router;
+- answer repair;
+- response guardrails;
+- local Ollama client;
+- dashboard-state context builders.
+
+The generated vector database is not committed. It should be rebuilt from the curated RAG documents when the implementation is integrated into a runnable application.
 
 ## Design Principles
 

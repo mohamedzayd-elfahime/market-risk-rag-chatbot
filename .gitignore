@@ -19,3 +19,4 @@ venv/
 *.out
 *.synctex.gz
 docs/_build/
+src/backend/chatbot/rag/vector_db/

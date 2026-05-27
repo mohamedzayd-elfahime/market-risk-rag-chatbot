@@ -1,0 +1,10 @@
+fastapi
+pydantic
+requests
+numpy
+langchain-core
+langchain-text-splitters
+langchain-chroma
+langchain-huggingface
+chromadb
+sentence-transformers
