@@ -1,0 +1,33 @@
+site_name: Market Risk RAG Chatbot
+site_description: Controlled RAG chatbot architecture and reference implementation for market risk dashboards.
+site_url: https://market-risk-rag-chatbot.readthedocs.io/
+
+repo_url: https://github.com/mohamedzayd-elfahime/market-risk-rag-chatbot
+repo_name: mohamedzayd-elfahime/market-risk-rag-chatbot
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: cyan
+    accent: green
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Architecture: ARCHITECTURE.md
+  - RAG Pipeline: RAG_PIPELINE.md
+  - Intent Routing: INTENT_ROUTING.md
+  - Guardrails: GUARDRAILS.md
+  - Diagrams: DIAGRAMS.md
+  - Reference Implementation: implementation.md
